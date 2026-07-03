@@ -4,24 +4,21 @@ API RESTful desarrollada en Spring Boot (Java 17) para la gestión de clientes y
 
 ## Requisitos Previos
 
-- **Java 17** (o superior)
+- **Java 17**
 - **Docker** y **Docker Compose**
-- **Maven** (incluido mediante wrapper `mvnw` / `mvnw.cmd`)
+- **Maven**
 
 ---
 
 ## 1. Levantar la Base de Datos (MySQL)
 
-La base de datos corre dentro de un contenedor Docker en el puerto **3307** para evitar conflictos si ya posees un MySQL local en el puerto estándar `3306`.
+La base de datos corre dentro de un contenedor Docker en el puerto **3306**.
 
 Para iniciar la base de datos, ejecuta el siguiente comando en la raíz del proyecto:
 
 ```bash
 docker-compose up -d
 ```
-
-Esto descargará la imagen oficial de MySQL 8.0 y levantará el contenedor de forma persistente.
-
 ---
 
 ## 2. Compilar y Ejecutar Pruebas
